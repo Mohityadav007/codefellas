@@ -1,0 +1,32 @@
+:root {
+    font-size: 100%;
+    --color-primary: hsl(222,94%,18%,1);
+    /* --color-secondary: hsl(222, 90%, 60%); */
+    --color-bg-light: hsl(210, 20%, 95%);
+    --color-text-blue: hsla(222, 20%, 40%);
+    /* --color-primary: hsl(350, 90%, 60%); */
+    /* --color-secondary: hsl(350, 90%, 80%); */
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: var(--color-text-blue);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+p {
+    color: var(--color-text-blue);
+}
+
+.nav-tabs {
+    border-bottom: 0;
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom: 2px solid #0074ad;
+}

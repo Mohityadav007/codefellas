@@ -1,0 +1,216 @@
+@import url(_global.css);
+
+nav.navbar-light a.navbar-brand {
+    color: #0074ad;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.85);
+}
+
+
+/* top section */
+.section-top {
+    background-image: url(./images/bg/top-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -0.6rem;
+}
+
+.btn__cta {
+    border: none;
+    /* background-color: hsl(350, 90%, 60%); */
+    background-color: hsl(200, 100%, 34%);
+    color:hsl(350, 10%, 100%);
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.3rem;
+    margin: auto;
+}
+
+.video-thumbnail-container img {
+    display: block;
+    margin: auto;
+}
+
+.video-thumbnail {
+    width: 100%;
+    max-width: 400px;
+}
+
+
+/* Common to all sections  */
+.section-heading {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.section-heading-container {
+    text-align: center;
+}
+
+
+/************ Exlucsive features *************/
+.exclusive-features-section {
+    background-color: hsl(218deg 100% 92%);
+}
+
+.exclusive-feature-container {
+    font-size: 0.75rem;
+    padding: 1rem;
+}
+
+.exclusive-features-heading-main {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.exclusive-feature-image {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.exclusive-features-heading {
+    font-size: 1.125rem;
+}
+
+.exclusive-features-text {
+    color: var(--color-text-blue);
+    font-size: 1rem;
+}
+
+/* Tracks Section  */
+.course-tracks-text {
+    font-size: 1rem;
+    color: var(--color-text-blue);
+}
+
+.track-card-inner-container {
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+
+/* About us section */
+.about-section {
+    /* background: url(./images/bg/grid.jpg); */
+    background-color: hsl(218deg 100% 92%);
+    background-repeat: repeat;
+}
+
+.about-us-subsection-container {
+    margin: 0 0 1rem 0;
+}
+
+.about-us-subheading {
+    font-size: 1rem;
+}
+
+.about-us-subsection-text {
+    font-size: 1rem;
+}
+
+/* Alumnus work section */
+.alumnus-company-image-container {
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.alumnus-company-image-container img {
+    transition: transform 100ms;
+}
+
+.alumnus-company-image-container img:hover {
+    transform: scale(1.08);
+}
+
+/* individual courses section */
+.individual-courses-section {
+    background: url(./images/bg/grid.jpg);
+    background-repeat: repeat;
+}
+
+.individual-courses-categ-container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.individual-courses-subheading {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+button#nav-foundation-tab,
+button#nav-development-tab {
+    font-size: 1rem;
+    padding: 0.8rem;
+    font-weight: 500;
+    color: rgba(0,0,0,0.6);
+}
+
+.course-card {
+    flex-basis: 160px;
+}
+
+.course-card-inner-container {
+    padding: 1rem;
+    margin: 0 1rem 1rem 0;
+    border-radius: 1rem;
+    transition: transform 150ms;
+    text-align: center;
+}
+
+.course-card-inner-container img {
+    display: block;
+    margin: auto;
+    margin-bottom: 0.4rem;
+ }
+
+.course-card-inner-container:hover {
+    box-shadow: 0 4px 8px 8px hsla(222, 20%, 90%);
+    transform: translateY(-0.2rem);
+    cursor: pointer;
+}
+
+/* contact us section */
+.contact-us-section {
+    background: url(./images/bg/grid.jpg);
+    background-repeat: repeat;
+}
+
+
+@media screen and (max-width: 991px) {
+    :root {
+        font-size: 14px;
+    }
+
+    .first-section-left {
+        min-height: 0;
+    }
+
+    .btn__cta {
+        color: white;
+    }
+
+    .exclusive-feature-container {
+        padding: 1rem;
+    }
+    button#nav-foundation-tab,
+    button#nav-development-tab {
+        max-width: 9rem;
+    }
+
+    .individual-courses-categ-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .individual-courses-categ-text {
+
+    }
+
+    .individual-courses-categ-icon {
+
+    } */
+}
